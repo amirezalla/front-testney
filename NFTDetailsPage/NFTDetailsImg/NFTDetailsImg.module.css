@@ -1,0 +1,9 @@
+.product_img_wrapper{
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: white;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+  }

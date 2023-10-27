@@ -1,0 +1,12 @@
+.ReactTags__tag{
+    background: var(--icons-light-color);
+    padding: 0px 2px 0px 6px;
+    border-radius: 3px;
+}
+.ReactTags__remove{
+    font-size: x-small;
+    margin-left: 5px;
+    color: white;
+    border: none;
+    background-color: #ff5d5d40;
+}

@@ -1,0 +1,109 @@
+
+.title{
+    width:80%;
+    height:auto;
+    /* border:solid 1px red; */
+    margin:10px auto;
+}
+.title_box{
+    /* margin-left:40px; */
+    /* border:solid 1px green; */
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:center;
+}
+.title_box h2{
+    letter-spacing: 5px;
+    font-family: 'Jost';
+  color: #eaff00;
+  font-size: 44px;
+  line-height: 44px;
+  text-shadow: 0 0 3px #eaff00;
+  animation: flux 2s linear infinite;
+  -moz-animation: flux 2s linear infinite;
+  -webkit-animation: flux 2s linear infinite;
+  -o-animation: flux 2s linear infinite;
+  
+}
+@keyframes flux {
+    0%,
+  100% {
+    text-shadow: 0 0 0.1vw #eaff00, 0 0 0.3vw #eaff00, 0 0 0.40vw #eaff00, 0 0 0.50vw #eaff00, 0 0 0.6vw #eaff00, .5vw .5vw 0.7vw #eaff00;
+    color: #eaff00;
+  }
+  50% {
+    text-shadow: 0 0 0.1vw #ffa500, 0 0 0.3vw #ffa500, 0 0 0.4vw #ffa500, 0 0 0.5vw #ffa500, 0 0 0.6vw #ffa500, .7vw .3vw 0.7vw #ffa500;
+    color: #eaff00;
+  }
+  }
+
+  @media screen and (min-width:1201px){
+
+    .title_box{
+        /* margin-left:40px; */
+    }
+    .title_box h2{
+        font-size:44PX;
+        margin-bottom:8px;
+    }
+    .title_box p{
+        font-size:20px;
+        color:#ffd500;
+    }
+   
+
+  }
+@media screen and (max-width:1200px){
+    .title_box{
+        /* margin-left:40px; */
+    }
+    .title_box h2{
+        font-size:44PX;
+        margin-bottom:8px;
+    }
+    .title_box p{
+        color:#ffd500;
+        font-size:20px;
+    }
+
+}
+@media screen and (max-width:992px){
+    .title_box{
+        /* margin-left:20px; */
+    }
+    .title_box h2{
+        font-size:38PX;
+        margin-bottom:4px;
+    }
+    .title_box p{
+        font-size:18px;
+        color:#ffd500;
+    }
+}
+@media screen and (max-width:768px){
+    .title_box{
+        /* margin-left:10px; */
+    }
+    .title_box h2{
+        margin-bottom:4px;
+        font-size:20PX;
+    }
+    .title_box p{
+        font-size:16px;
+        color:#ffd500;
+    }
+}
+@media screen and (max-width:576px){
+    .title_box{
+        margin-left:4px;
+    }
+    .title_box h2{
+        font-size:20PX;
+        margin-bottom:2px;
+    }
+    .title_box p{
+        font-size:14px;
+        color:#ffd500;
+    }
+}

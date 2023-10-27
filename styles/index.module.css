@@ -1,0 +1,9 @@
+.homePage{
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #071838;
+}

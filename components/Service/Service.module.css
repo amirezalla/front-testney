@@ -1,0 +1,152 @@
+.container {
+    font-family: 'Ubuntu';
+    background-color: black;
+    width: 100%;
+    min-height:20px;
+
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.services{
+    padding-top: 90px;
+width: 80%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+.tittle{
+    padding-top: 30px;
+    display: block;
+    text-align: center;
+    margin-bottom: 150px;
+}
+.title h1{
+    font-weight: normal;
+    font-size: 26px;
+    color:yellow;
+    text-align: center;
+}
+.title h6{
+    font-weight: normal;
+    font-size: 14px;
+    color: aliceblue;
+    text-align: center;
+}
+.servicebBox{
+    width: 300px;
+    height: 250px;
+    padding: 30px 40px;
+    background-color: black;
+    /* background:linear-gradient(145deg,#202227,black); */
+    margin: 40px 20px;
+    text-align: center;
+    border-radius: 8px;
+    border: solid 1px #202227;
+    box-shadow: 6px 6px 12px #202227,-6px -6px 12px #202227;
+    position: relative;
+
+}
+.serviceImage{
+    position: absolute;
+    left:31%;
+    top: 30px;
+    margin-top: -100px;
+    /* border: solid 1px red; */
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 50%;
+   box-shadow: 6px 6px 12px #202227,-6px -6px 12px #202227;
+}
+.serviceImage img{
+    width: 50%;
+    transform: scale(0.75) rotate(0);
+    transition: all 1s ease-in-out;
+}
+.servicebBox:hover img{
+    
+    transform: scale(0.85) rotate(360deg);
+}
+.servicebBox:hover .serviceImage{
+    background-color: yellow;
+}
+.servicebBox h3{
+    margin-top: 30px;
+    font-size: 20px;;
+    color: white;
+    white-space:nowrap;
+}
+.servicebBox:hover h3{
+    color: yellow;
+}
+.servicebBox p{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 100;
+    color: white;
+    text-align: justify;
+    text-align-last: center;
+}
+.servicebBox span{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    font-weight: bold;
+    text-align: center;
+}
+.servicebBox span i{
+  
+    color: white;
+    font-size: 25px;
+}
+
+@media screen and (min-width: 1200px) {
+.services{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    width:100%;
+}
+.servicebBox{
+    width:250px;
+    margin:20px 0;
+}
+.servicebBox h3{
+    margin-top: 30px;
+    font-size: 16px;;
+    color: white;
+}
+
+.title h1{
+    font-weight: normal;
+    font-size: 40px;
+    color:yellow;
+    text-align: center;
+}
+.title h6{
+    font-weight: normal;
+    font-size: 20px;
+    color: aliceblue;
+    text-align: center;
+}
+.servicebBox p{
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 100;
+    color: white;
+    text-align: justify;
+    text-align-last: center;
+}
+
+}

@@ -1,0 +1,112 @@
+.MenuMob{
+    background-color: #142442;
+    /* background: linear-gradient(45deg, #590f87 0%, #ff0076 50%, #590f87 100%); */
+    
+}
+
+/* Make the menu responsive for mobile devices */
+@media (max-width: 768px) {
+    .menu li {
+        display: block;
+        text-align: left;
+    }
+
+    .menu li a {
+        padding: 10px 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu.active {
+        display: block;
+    }
+}
+.menu {
+    width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.item {
+    border-top: 1px solid #000;
+    overflow: hidden;
+    /* background: linear-gradient(45deg, #590f87 0%, #ff0076 50%, #590f87 100%); */
+    color: #222220;
+}
+
+.btn1 {
+    display: block;
+    padding: 16px 20px;
+    /* background: #C28C2E; */
+
+    /* background: linear-gradient(45deg, #590f87 0%, #ff0076 50%, #590f87 100%); */
+    /* background: #fff; */
+    background-color: transparent;
+    /* color: #222220; */
+    color: #fff;
+    position: relative;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn1:before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    /* background: #C28C2E; */
+    background: linear-gradient(45deg, #590f87 0%, #ff0076 50%, #590f87 100%);
+    left: 20px;
+    bottom: -7px;
+    transform: rotate(45deg);
+}
+
+.btn1 i {
+    margin-right: 10px;
+}
+
+.smenu {
+    background: #222220;
+    overflow: hidden;
+    max-height: 0;
+    padding-left: 30px;
+    transition: max-height 0.3s ease;
+}
+
+.smenu a {
+    /* color: #C28C2E; */
+    color: #fff;
+    display: block;
+    padding: 16px 26px;
+    font-size: 14px;
+    margin: 4px 0;
+    position: relative;
+    text-decoration: none;
+}
+
+.smenu a:before {
+    content: "";
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    /* background: #C28C2E; */
+    background: linear-gradient(45deg, #590f87 0%, #ff0076 50%, #590f87 100%);
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.smenu a:hover::before {
+    opacity: 1;
+}
+
+/*#profile:hover .smenu {
+    max-height: 100%;
+}*/
+
+.item:target .smenu {
+    max-height: 10em;
+}

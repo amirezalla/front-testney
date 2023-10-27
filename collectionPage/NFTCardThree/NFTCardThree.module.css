@@ -1,0 +1,19 @@
+.images{
+    object-fit: fill;
+    height: 300px;
+    max-width: none !important;
+  }
+  .Feature{
+  color: white;
+  font-size: 9px;
+  }
+  .product_img_wrapper{
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: white;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    margin-bottom: 220px;
+  }

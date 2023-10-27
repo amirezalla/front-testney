@@ -1,0 +1,135 @@
+ /* .button {
+    background-color: var(--icons-color);
+    padding: 1rem 2rem;
+    border: 1px solid var(--icons-color);
+    border-radius: 2rem;
+    font-size: 1.1rem;
+    color: var(--shadow-light-color);
+    cursor: pointer;
+    transition:  all .2s ease-in;
+    box-shadow: var(--box-shadow);
+}
+
+.button:hover{
+    background-color: var(--main-bg-color);
+    border:  1px solid var(--icons-color);
+    color:  var(--icons-color);
+}
+.fullWitdh{
+    width: 100% !important;
+}  */
+
+
+
+
+.BtnNeon{
+    font-weight:bold;
+      color: #03E9F4;
+      display: inline-block;
+      font-size: 16px;
+      letter-spacing: 0px;
+      margin: 20px 40px;
+      padding: 12px 15px;
+      position: relative;
+      overflow: hidden;
+      text-decoration: none;
+      text-transform: uppercase;
+      white-space: nowrap;
+      transition: 0.5s;
+  /* 	-webkit-box-reflect: below 1px linear-gradient(transparent, #0005); */
+    border-radius:5px;
+  } 
+  
+  .BtnNeon:nth-child(1){
+      filter: hue-rotate(240deg);
+  }
+  
+  .BtnNeon:nth-child(3){
+      filter: hue-rotate(110deg);
+  }
+  
+  .BtnNeon:hover{
+      background: #03E9F4;
+      box-shadow: 0 0 5px #03E9F4, 0 0 25px #03E9F4, 0 0 50px #03E9F4, 0 0 200px #03E9F4;
+      color: #050801;
+  }
+  
+  .BtnNeon span{
+      display: block;
+      position: absolute;
+  }
+  
+  .BtnNeon span:nth-child(1){
+      animation: animate1 3s linear infinite;
+      background: linear-gradient(10deg, transparent, #03E9F4);
+      height: 2px;
+      left: -100%;
+      top: 0;
+      width: 100%;
+  }
+  
+  @keyframes animate1{
+      0%{
+          left: -100%;
+      }
+      50%, 100%{
+          left: 100%;	
+      }
+  }
+  
+  .BtnNeon span:nth-child(2){
+      animation: animate2 1s linear infinite;
+      animation-delay: 0.25s;
+      background: linear-gradient(180deg, transparent, #03E9F4);
+      height: 100%;
+      top: -100%;
+      right: 0;
+      width: 2px;
+  }
+  
+  @keyframes animate2{
+      0%{
+          top: -100%;
+      }
+      50%, 100%{
+          top: 100%;	
+      }
+  }
+  
+  .BtnNeon span:nth-child(3){
+      animation: animate3 1s linear infinite;
+      animation-delay: 0.5s;
+      background: linear-gradient(270deg, transparent, #03E9F4);
+      bottom: 0;
+      height: 2px;
+      right: -100%;
+      width: 100%;
+  }
+  
+  @keyframes animate3{
+      0%{
+          right: -100%;
+      }
+      50%, 100%{
+          right: 100%;	
+      }
+  }
+  
+  .BtnNeon span:nth-child(4){
+      animation: animate4 1s linear infinite;
+      animation-delay: 0.75s;
+      background: linear-gradient(360deg, transparent, #03E9F4);
+      bottom: -100%;
+      height: 100%;
+      left: 0;
+      width: 2px;
+  }
+  
+  @keyframes animate4{
+      0%{
+          bottom: -100%;
+      }
+      50%, 100%{
+          bottom: 100%;	
+      }
+  } 

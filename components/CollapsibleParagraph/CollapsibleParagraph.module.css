@@ -1,0 +1,15 @@
+.date{
+    color: #f1d36d !important;
+    font-weight: bold !important;
+}
+.title{
+    font-style: italic;
+    font-weight: 800;
+    color: white;
+}
+.normal{
+    font-style: italic;
+    color: white;
+    font-weight: 100;
+    margin-bottom: 10px !important;
+}

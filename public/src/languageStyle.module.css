@@ -1,0 +1,18 @@
+.langMod{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    justify-content: space-between;
+    width: 90px;
+    margin-left: 3px; 
+}
+.langBtn{
+    width: 30px ;
+    height: 30px;
+    margin: 2px;
+    color: white;
+    padding: 1px;
+    border-radius: 50%;
+    border: solid 1px white;
+}

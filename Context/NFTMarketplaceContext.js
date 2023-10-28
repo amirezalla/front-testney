@@ -61,7 +61,7 @@ const connectingWithSmartContract1 = async () => {
     try {
 
         var ethers = require('ethers');
-        var url = 'https://young-green-shard.bsc.discover.quiknode.pro/41042211bc2caac86bde50238efb62c4e2c88269/';
+        var url = 'https://data-seed-prebsc-1-s1.binance.org:8545/';
         var customHttpProvider = new ethers.providers.JsonRpcProvider(url);
         const contract = fetchContract(customHttpProvider);
         console.log(contract);
@@ -320,9 +320,9 @@ export const NFTMarketplaceProvider = ({children}) => {
     const fetchNFTs = async () => {
         try {
             const provider = new ethers.providers.JsonRpcProvider(
-                //--process.env.NEXT_PUBLIC_POLYGON_MUMBAI_RPC
-                "https://young-green-shard.bsc.discover.quiknode.pro/41042211bc2caac86bde50238efb62c4e2c88269/"
+                "https://data-seed-prebsc-1-s1.binance.org:8545/"
             );
+            
 
             const contract = fetchContract(provider);
 

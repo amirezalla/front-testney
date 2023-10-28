@@ -9,7 +9,7 @@ import "hardhat/console.sol";
 
 contract NFTMarketplace is ERC721URIStorage {
     using Counters for Counters.Counter;
-    Counters.Counter private _tokenIds;
+    Counters.Counter private _tokenIds; 
     Counters.Counter private _itemsSold;
 
     uint256 listingPrice = 0.0001 ether;

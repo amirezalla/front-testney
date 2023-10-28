@@ -8,8 +8,10 @@ export const apiEndpoint="http://localhost:8000/api/";
 //NFT MARKETPLACE
 // export const NFTMarketplaceAddress =
 //   "0xf1432fa56bbb5ed5620e2762f16243e2ad9463f9";
-  export const NFTMarketplaceAddress =
-  "0xEE2a0724fB89d64768198000E0020c84132a0Ba3";
+  // export const NFTMarketplaceAddress =
+  // "0xEE2a0724fB89d64768198000E0020c84132a0Ba3";
+    export const NFTMarketplaceAddress =
+  "0xB4561a1Aa38cC86B46Ff86D5983C752547039638";
 export const NFTMarketplaceABI = nftMarketplace.abi;
 
 //TRANSFER FUNDS
